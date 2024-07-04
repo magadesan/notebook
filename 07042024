@@ -1,0 +1,11 @@
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/opt/homebrew/bin/brew install --cask google-chrome
+/opt/homebrew/bin/brew install --cask intellij-idea-ce
+/opt/homebrew/bin/brew install docker 
+/opt/homebrew/bin/brew reinstall --cask docker --force
+/opt/homebrew/bin/brew install --cask visual-studio-code
+/opt/homebrew/bin/brew reinstall --cask postman
+ssh-keygen -t ed25519 -C elamurug@hotmail.com
+docker pull jenkins/jenkins
+docker network create jenkins
+docker run -p 8080:8080 -p 50000:50000 -v /Users/elamv:/var/jenkins_home jenkins/jenkins
