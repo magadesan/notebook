@@ -11,3 +11,6 @@ docker network create jenkins
 docker run -p 8080:8080 -p 50000:50000 -v /Users/elamv:/var/jenkins_home jenkins/jenkins
 docker run --platform linux/x86_64 -v $(pwd):/work codello/lilypond -f midi -f pdf score.ly
 brew install ffmpeg
+brew install maven
+docker pull  openapitools/openapi-generator-cli
+docker run --rm -v ".:/petstore" openapitools/openapi-generator-cli generate -i /petstore/petstore/spec/swagger.json -g java -o /petstore/petstore
