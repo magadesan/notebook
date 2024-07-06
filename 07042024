@@ -14,3 +14,8 @@ brew install ffmpeg
 brew install maven
 docker pull  openapitools/openapi-generator-cli
 docker run --rm -v ".:/petstore" openapitools/openapi-generator-cli generate -i /petstore/petstore/spec/swagger.json -g java -o /petstore/petstore
+
+
+https://medium.com/@shivam77kushwah/docker-inside-docker-e0483c51cc2c
+https://medium.com/@swinarah/use-github-with-ssh-key-for-mac-47af21cf7f4d
+https://devopscube.com/docker-containers-as-build-slaves-jenkins/
