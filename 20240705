@@ -5,3 +5,6 @@ Jenkinsfile
 Dockerfile
 schema validation
 Listener
+Intellijidea
+Github Actions/Workflow
+install openapi-generator locally and generate code on the fly
